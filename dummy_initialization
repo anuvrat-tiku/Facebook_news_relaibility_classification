@@ -1,0 +1,27 @@
+
+    # corpus = ['"name"', '"message"', '"description"', '"Chief Justice Roberts Responds to Judicial Ethics Critics"',
+    #           '"Roberts took the unusual step of devoting the majority of  his annual  report to the issue of judicial ethics."',
+    #           '"PAUL J. RICHARDS/AFP/Getty Images Chief Justice John Roberts issued a ringing endorsement Saturday night of his colleagues\x19  ability to determine when they should step down from a case because of a conflict of interest. \x1c I have complete confidence in the capability of my colleagues to determine when ..."',
+    #           '"With Reservations', ' Obama Signs Act to Allow Detention of Citizens"',
+    #           '"Do you agree with the new law?"',
+    #           '"Wishes For 2012 to Fall on Times Square"',
+    #           '"Some pretty cool confetti will rain down on New York City celebrators."',
+    #           '"The wishes of thousands of people will flutter down from New York City\x19 s buildings and descend on Times Square when the iconic ball drops tomorrow..."',
+    #           '"Mitt Romney Vows to Veto Dream Act if President"', 'NULL', '"Eric Gay/AP Photo SIOUX CITY',
+    #           '"NY Pharmacy Shootout Leaves Suspect', ' ATF Agent Dead"',
+    #           '"The pharmacy was held up by a man seeking prescription medication. "', '"The World Rings in 2012"',
+    #           'NULL',
+    #           '"   Around the world', '"Breaking: Magnitude 7.0 Quake His Japan', ' No Tsunami Warning"',
+    #           '"There were no immediate reports of damage or injuries."', '"PC',
+    #           ' TV Buyers to Collect $553M LCD Settlement"',
+    #           '"Were you an LCD screen early adopter? A settlement may be headed your way."',
+    #           '"Coast Guard Passenger-Limit Rule Reflects Americans\' Weight Gain"', '"As Americans get bigger',
+    #           ' passenger limits are becoming more restrictive."']
+
+    article = ["Justice Roberts Responds to Judicial Ethics Critics",
+                   "Chief Justice John Roberts issued a ringing endorsement Saturday night of his colleagues' ability to determine when they should step down from a case because of a conflict of interest."]  # Query
+
+
+feed = feedparser.parse(crawl_url)
+for x in feed['entries']:
+    print x['summary_detail']['value']
