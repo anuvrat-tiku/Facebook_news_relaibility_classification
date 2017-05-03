@@ -22,3 +22,6 @@ Inverse Document frequency : IDF for article matrix.
 Matplotlib : To visualize cosine distance.
 Hive : Metastore for news dump used in level-2 verification.
 Most of the above tools can be found in Python NLTK (Natural language processing toolkit) and Sklearn (Scikit-learn).
+
+
+## Dataset link : https://www.dropbox.com/s/vdq2ksi73jhwh22/11_new_agencies-facebook-posts.zip?dl=0
